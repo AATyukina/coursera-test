@@ -1,34 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Heading Elements</title>
+	<title>Просто посмотри, как это красиво</title>
+	<meta http-equiv=content-type content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		div{
+			background-color: rgb(163, 167, 208);
+		}
+		p{
+			border: 10px double #000000;
+			padding: 5px;
+			width: 50%;
+			height: 50px;
+			margin: 0px;
+			overflow:auto; 
+		}
+		img{
+			width: 50%;
+			height:360;
+			border: 10px solid black;
+		}
+		#p1{background-color: green; color:red;}
+		#p2{background-color: yellow; position:relative; left:50%;bottom:50px;}
+		#newbc{background-color: blue; margin-top: 30px; width: auto;}
+		@media (min-width: 500px) and (max-width: 600px) {
+			p{
+				width: 100%;
+			}
+		}
+	</style>
 </head>
 <body>
-  <header>
-    header element - Some header information goes here. Usually consists of company logo, some tag line, etc. Sometimes, navigation is contained in the header as well.
-    <nav>nav (short for navigation) element - Usually contains links to different parts of the web site.</nav>
-  </header>
-  <h1>Main Heading of the Page (hard not to have it)</h1>
-  <section>
-    Section 1
-    <article>Article 1</article>
-    <article>Article 2</article>
-    <article>Article 3</article>
-  </section>
-  <section>
-    Section 2
-    <article>Article 4</article>
-    <article>Article 5</article>
-    <article>Article 6</article>
-    <div>Regular DIV element</div>
-  </section>
-  <aside>
-    ASIDE - Some information that relates to the main topic, i.e., related posts.
-  </aside>
-
-  <footer>
-    JHU Copyright 2015
-  </footer>
+	<h1>Это просто история о том, как студенты учатся верстать веб-страницы</h1>
+	<main>Здесь был использован тег main, так как мы хотим посмотреть, что будет. Просмотр такого рода тегов вызывает неимоврный экстраз у студентов второго курса.</main>
+	<h2>Объявим тег div и два параграфа</h2>
+	<div style="height: 50px;">
+		<p id="p1">Здесь был использован тег main, так как мы хотим посмотреть, что будет. Просмотр такого рода тегов вызывает неимоврный экстраз у студентов второго курса.Здесь был использован тег main, так как мы хотим посмотреть, что будет. Просмотр такого рода тегов вызывает неимоврный экстраз у студентов второго курса.Здесь был использован тег main, так как мы хотим посмотреть, что будет. Просмотр такого рода тегов вызывает неимоврный экстраз у студентов второго курса.Здесь был использован тег main, так как мы хотим посмотреть, что будет. Просмотр такого рода тегов вызывает неимоверный экстраз у студентов второго курса.</p>
+		<p id="p2"></p>
+	</div>
+	<div id="newbc">
+		<img src="https://wallbox.ru/resize/1920x1080/wallpapers/main/201502/81066daf68b67ac.jpg"  alt="Beatiful house">
+		<a href="http://www.skoropisanie.ru"><img src="http://www.skoropisanie.ru/img/result/0725/1124184.png" width="50%"></a><br/><a href="http://www.skoropisanie.ru">Клавиатурный тренажер</a>
+	</div>
 </body>
 </html>
